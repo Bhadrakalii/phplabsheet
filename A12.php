@@ -1,10 +1,10 @@
-<!-- WAP to check whether a number is odd or even. -->
+<!-- WAP to check whether a number is divisible by 7 or not. -->
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>check whether a number is odd or even</title>
+    <title>check whether a number is divisible by 7 or not</title>
 </head>
 <body>
     <form action="" method="post">
@@ -20,11 +20,11 @@
         if($_SERVER["REQUEST_METHOD"]=="POST"){
             $number = $_POST["number"];
             
-            if($number%2==0)
-                echo "<h1>$number is Even number</h1>";
+            if($number%7==0)
+                echo "<h1>$number is divisible by 7</h1>";
 
             else
-                echo"<h1>$number is odd number</h1>";
+                echo"<h1>$number is not divisible by 7</h1>";
 
         }
 
