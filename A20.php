@@ -1,16 +1,16 @@
-<!-- 1, 4, 9, 16, ..... upto 20 terms. -->
+<!-- 100, 98, 96, 94, ............. Upto 10 terms. -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squares</title>
+    <title>Even Pattern</title>
 </head>
 <body>
     <form action="" method="post">
         
-        <h1>Squares upto 20 terms</h1>
+        <h1>Even pattern</h1>
 
         <input type="submit" value="print">
 
@@ -20,10 +20,11 @@
 
         if($_SERVER["REQUEST_METHOD"]=="POST"){
             
-            
-            for ($i = 1; $i <= 20; $i++) {
-                $result = $i * $i;
+            $result=100;
+            for ($i = 1; $i <= 10; $i++) {
                 echo "$result , &nbsp";
+                $result=$result-2;
+
             }    
                 
         

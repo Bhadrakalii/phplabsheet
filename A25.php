@@ -1,18 +1,19 @@
-<!-- 1, 4, 9, 16, ..... upto 20 terms. -->
+<!-- Pattern A -->
+
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Squares</title>
+    <title>Pattern A</title>
 </head>
 <body>
     <form action="" method="post">
         
-        <h1>Squares upto 20 terms</h1>
+        <h1>Pattern A</h1>
 
-        <input type="submit" value="print">
+        <input type="submit" value="Print">
 
     </form>
 
@@ -20,13 +21,14 @@
 
         if($_SERVER["REQUEST_METHOD"]=="POST"){
             
-            
-            for ($i = 1; $i <= 20; $i++) {
-                $result = $i * $i;
-                echo "$result , &nbsp";
-            }    
+            for($i=1;$i<=5;$i++){
+
+                for($j=1;$j<=$i;$j++)
+                    echo"*";
+                echo "<br>";
+            }
                 
-        
+
     }
             
     ?>
